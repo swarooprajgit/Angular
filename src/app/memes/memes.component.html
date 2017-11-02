@@ -1,0 +1,12 @@
+<div>
+  <div *ngFor='let meme of memearray' align = "center">
+    <div class="box">
+      <a>Title</a>
+      <img [src] = 'meme.image' style="width: 100% ">
+      <i class="fa fa-thumbs-o-up"><div id="like"> {{meme.upvotes}}</div></i>
+      <i class="fa fa-thumbs-o-down"><div id="dislike"> {{meme.downvotes}}</div></i>
+    </div>
+    <br>
+  </div>
+
+</div>
